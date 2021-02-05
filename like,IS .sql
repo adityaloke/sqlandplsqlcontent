@@ -1,19 +1,14 @@
-1. Display employee records whose name ends with s ?
+select ename from emp where  ename like '%S';
+select ename from emp where  ename  not like '%S%';
+select ename from emp where  ename   like '_A%';
+select * from emp where hiredate like '%JAN%';
+select * from emp where hiredate like '%81%';
+select * from emp where substr(hiredate,1,2)<=9;
+select * from emp where length(sal)=5;
+select * from emp where comm is null;
+select * from emp where comm is not null;
 
-2. Display employee records whose name doesn't contain s?
 
-3. Display employee records where A is the second char in the name?
 
-4. Display employee records who are joined in JAN month ?
 
-5. Display employee records who are joined in 1981 year ?
 
-6. Display employee records who are joined in 1st 9 days ?
-
-7. Display employee records who are earning 5 digit salary ?
-
-8. Display employee records whose comm IS NULL ?
-
-9. Display employee records whose comm IS NOT NULL ?
-
- 
